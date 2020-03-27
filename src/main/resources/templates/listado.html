@@ -24,42 +24,13 @@
 
     <div class="container mt-4 vj-destacados">
         <div class="row">
-            <!-- COL 1 -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/03/27/15537190644260.png"
+            <div th:each="juego: ${videojuegos}" class="col-md-3 mb-4">
+                <div class="card">
+                    <img th:src="${juego.imagenUrl}"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">CS GO</h5>
-                        <p class="card-text">El juego que te quitará las ganas de vivir.</p>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-            <!-- COL 2 -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rocket_League_coverart.jpg/490px-Rocket_League_coverart.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Rocket League</h5>
-                        <p class="card-text">Alto juego man.</p>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-            <!-- COL 3 -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://i11d.3djuegos.com/juegos/9592/the_witcher_3/fotos/ficha/the_witcher_3-2546815.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">The Witcher 3</h5>
-                        <p class="card-text">Tremendo game nigga.</p>
+                        <h5 th:text="${juego.getNombre()}" class="card-title"></h5>
+                        <p th:text="${juego.getDescripcion()}"class="card-text"></p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary">Ver detalles</a>

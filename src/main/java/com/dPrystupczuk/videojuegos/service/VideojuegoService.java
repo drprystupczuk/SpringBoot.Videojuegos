@@ -34,9 +34,9 @@ public class VideojuegoService {
         
         
         juego = new Videojuego();
-        juego.setNombre("Counter Strike Global Offensive");
-        juego.setDescripcion("Es un videojuego de disparos en primera persona desarrollado por Valve Corporation en cooperación con Hidden Path Entertainment");
-        juego.setImagenUrl("https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/03/27/15537190644260.png");
+        juego.setNombre("FIFA 20");
+        juego.setDescripcion("Es un videojuego de fútbol. Desarrollado por EA");
+        juego.setImagenUrl("https://generacionxbox.com/wp-content/uploads/2019/05/D55j5xfW4AA5dkm.jpg");
         destacados.add(juego);
         
         return destacados;

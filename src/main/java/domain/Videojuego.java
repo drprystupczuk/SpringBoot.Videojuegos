@@ -28,4 +28,11 @@ public class Videojuego {
     public void setImagenUrl(String imagenUrl) {
         this.imagenUrl = imagenUrl;
     }
+    
+    @Override
+    public String toString(){
+      return "Nombre: "+ this.nombre + ", "
+              + "Descripcion: "+ this.descripcion+ ", "
+              + "urlImange: " + this.imagenUrl;         
+    }
 }

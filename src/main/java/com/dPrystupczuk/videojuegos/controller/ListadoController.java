@@ -25,7 +25,7 @@ public class ListadoController {
         model.addAttribute("videojuegos", destacados);
         
         for (int i = 0; i < destacados.size(); i++) {
-            System.out.println("videojuego: " + destacados.get(i));
+            System.out.println("videojuego: " + destacados.get(i).toString());
         }
 
         return "listado";
