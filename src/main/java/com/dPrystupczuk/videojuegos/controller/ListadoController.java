@@ -1,7 +1,7 @@
 package com.dPrystupczuk.videojuegos.controller;
 
 import com.dPrystupczuk.videojuegos.service.VideojuegoService;
-import domain.Videojuego;
+import com.dPrystupczuk.videojuegos.domain.Videojuego;
 import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
