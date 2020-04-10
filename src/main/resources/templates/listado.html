@@ -30,6 +30,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 th:text="${juego.getNombre()}" class="card-title"></h5>
+                        <span class="badge badge-pill badge-warning" th:text="${juego.distribuidor.nombre}"></span>
                         <p th:text="${juego.getDescripcion()}"class="card-text"></p>
                     </div>
                     <div class="card-footer text-muted">
