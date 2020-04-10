@@ -11,16 +11,18 @@ public interface VideojuegoRepository extends JpaRepository<Videojuego,Integer>{
     // findAll()
     // findById()
     // save()
-    // delete()
+    // delete()    
     
+    //Ejemplo para usar SQL Nativo
+    //@Query(value = "SELECT * FROM Videojuego", nativeQuery = true) 
+    //List<Videojuego> buscarTodosSQL();
     
     //JPQL Videojuego hace ref a la clase
     @Query("from Videojuego v ORDER BY v.nombre") 
     List<Videojuego> buscarTodos();
     
-    
-    //Ejemplo para usar SQL Nativo
-    //@Query(value = "SELECT * FROM Videojuego", nativeQuery = true) 
-    //List<Videojuego> buscarTodosSQL();
+    @Query("from Videojuego v WHERE v.distribuidor.id = ?1 ORDER BY v.nombre") 
+    List<Videojuego> buscarPorDistribuidor(int distribuidor);
+
     
 }
