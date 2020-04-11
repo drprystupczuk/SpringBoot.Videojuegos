@@ -9,14 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/videojuegos.css">
+    <link rel="stylesheet" href="css/videojuegos.css">
 
     <title>Tienda VJ</title>
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" th:href="@{/}">
             <img src="img/icon.png" width="30" height="30" alt="">
             Tienda VJ
         </a>
@@ -30,7 +30,9 @@
                         class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 th:text="${juego.getNombre()}" class="card-title"></h5>
-                        <span class="badge badge-pill badge-warning" th:text="${juego.distribuidor.nombre}"></span>
+                        <p>
+                            <a th:href="@{/videojuegosPorDistribuidor(distribuidorId=${juego.distribuidor.id})}" class="badge badge-pill badge-warning" th:text="${juego.distribuidor.nombre}"></a>
+                        </p>
                         <p th:text="${juego.getDescripcion()}"class="card-text"></p>
                     </div>
                     <div class="card-footer text-muted">

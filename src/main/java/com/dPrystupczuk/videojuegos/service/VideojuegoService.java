@@ -20,7 +20,7 @@ public class VideojuegoService {
         return videojuegoRepository.buscarTodos();
     }
     
-        public List<Videojuego> buscarPorDistribuidor(int distribuidorId){
+    public List<Videojuego> buscarPorDistribuidor(int distribuidorId){
         return videojuegoRepository.buscarPorDistribuidor(distribuidorId);
     }
 }

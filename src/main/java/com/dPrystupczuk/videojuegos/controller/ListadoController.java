@@ -27,7 +27,14 @@ public class ListadoController {
         for (int i = 0; i < destacados.size(); i++) {
             System.out.println("videojuego: " + destacados.get(i).toString());
         }
-
+        
+        return "listado"; //hace referencia a el archivo listado.html
+    }
+    
+    @RequestMapping("/videojuegosPorDistribuidor")
+    public String listarVideojuegosPorDistribuidor(int distribuidorId, Model model){
+        List<Videojuego> juegos = videojuegoService.buscarPorDistribuidor(distribuidorId);
+        model.addAttribute("videojuegos", juegos);
         return "listado";
     }
 }
