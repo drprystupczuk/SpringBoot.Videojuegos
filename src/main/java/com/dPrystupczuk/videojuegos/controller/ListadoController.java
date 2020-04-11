@@ -37,4 +37,11 @@ public class ListadoController {
         model.addAttribute("videojuegos", juegos);
         return "listado";
     }
+    
+    @RequestMapping("/videojuegosPorNombre")
+        public String listarVideojuegos(String consulta, Model model){
+        List<Videojuego> juegos = videojuegoService.buscar(consulta);
+        model.addAttribute("videojuegos", juegos);
+        return "listado";
+    }
 }
