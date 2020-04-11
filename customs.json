@@ -2,6 +2,10 @@
     "elements": {},
     "attributes": {
         "th:text": {},
-        "th:each": {}
+        "th:action": {},
+        "th:src": {},
+        "th:each": {},
+        "th:href": {},
+        "th:placeholder": {}
     }
 }
