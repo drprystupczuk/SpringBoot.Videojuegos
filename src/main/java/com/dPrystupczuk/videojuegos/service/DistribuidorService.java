@@ -16,7 +16,7 @@ public class DistribuidorService {
         this.distribuidorRepository = distribuidorRepository;
     }
     
-     public List<Repository> buscarTodos(){
+     public List<Distribuidor> buscarTodos(){
          return distribuidorRepository.findAll();
      }
 }
