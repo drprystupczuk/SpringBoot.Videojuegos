@@ -1,9 +1,9 @@
 package com.dPrystupczuk.videojuegos.repository;
 
+import com.dPrystupczuk.videojuegos.domain.Distribuidor;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-public interface DistribuidorRepository extends JpaRepository<Repository,Integer>{
+public interface DistribuidorRepository extends JpaRepository<Distribuidor,Integer>{
     
 
 }
