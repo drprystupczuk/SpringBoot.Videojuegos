@@ -1,4 +1,4 @@
-# [ES] ABM Videojuegos :video_game:
+# [ES] Tienda de videojuegos :video_game:
 Aplicación Java Web profesional, usando Spring Boot, Spring MVC, Spring Data, Thymeleaf, Bootstrap y más.
 
 ### Descripción: :rocket:
