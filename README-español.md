@@ -1,4 +1,4 @@
-# [ES] AMB Videojuegos
+# [ES] AMB Videojuegos :video_game:
 Aplicación Java web profesional, usando Spring Boot, Spring MVC, Spring Data, Thymeleaf, Bootstrap y más.
 
 ### Descripción: :rocket:
