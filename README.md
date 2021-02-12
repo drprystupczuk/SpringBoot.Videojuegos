@@ -1,7 +1,7 @@
 # [EN] Videogames store :video_game:
 Completed [udemy course](https://www.udemy.com/course/spring-boot-desde-cero/) for getting started in JAVA Spring Boot world.
 
-### Description: :rocket:
+### Description :rocket:
 _Professional Java web application using Spring Boot, Spring MVC, Spring Data Thymeleaf, Bootstrap and else._
 
 ### About me ✒️
